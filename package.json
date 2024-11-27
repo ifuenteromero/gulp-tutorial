@@ -1,0 +1,13 @@
+{
+	"name": "gulp",
+	"version": "1.0.0",
+	"description": "gulp tutorial",
+	"scripts": {
+		"format": "prettier --write ."
+	},
+	"author": "Irene Fuente",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^3.4.1"
+	}
+}
