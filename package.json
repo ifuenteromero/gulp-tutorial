@@ -2,12 +2,14 @@
 	"name": "gulp",
 	"version": "1.0.0",
 	"description": "gulp tutorial",
+	"type": "module",
 	"scripts": {
 		"format": "prettier --write ."
 	},
 	"author": "Irene Fuente",
 	"license": "ISC",
 	"devDependencies": {
+		"gulp": "^5.0.0",
 		"prettier": "^3.4.1"
 	}
 }

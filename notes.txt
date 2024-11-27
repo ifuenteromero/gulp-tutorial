@@ -1,0 +1,2 @@
+npm i gulp-cli -g
+para ver la versión gulp -v y aparece la de gulp-cli
