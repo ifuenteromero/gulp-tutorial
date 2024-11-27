@@ -1,4 +1,12 @@
+'use strict';
+import gulp from 'gulp';
+
 import { parallel, series } from 'gulp';
+import prettier from 'gulp-prettier';
+import gulpSass from 'gulp-sass';
+import * as dartSass from 'sass';
+
+const sass = gulpSass(dartSass);
 
 function printName(cb) {
 	// place code for your default task here
@@ -13,7 +21,15 @@ function printAge(cb) {
 
 const print = parallel(printName, printAge);
 
-export { print, printAge, printName };
+function buildStyles() {
+	return gulp
+		.src('./src/scss/**/*.scss')
+		.pipe(sass().on('error', sass.logError))
+		.pipe(prettier({ tabWidth: 4, useTabs: true }))
+		.pipe(gulp.dest('./public/css'));
+}
+
+export { buildStyles, print, printAge, printName };
 
 // gulp printName
 // gulp --tasks

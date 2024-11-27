@@ -8,5 +8,20 @@
 	"bracketSpacing": true,
 	"trailingComma": "es5",
 	"useTabs": true,
-	"singleAttributePerLine": true
+	"singleAttributePerLine": true,
+	"overrides": [
+		{
+			"files": "*.css",
+			"options": {
+				"tabWidth": 4
+			}
+		},
+		{
+			"files": "*.scss",
+			"options": {
+				"tabWidth": 4,
+				"useTabs": true
+			}
+		}
+	]
 }

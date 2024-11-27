@@ -11,6 +11,9 @@
 	"license": "ISC",
 	"devDependencies": {
 		"gulp": "^5.0.0",
-		"prettier": "^3.4.1"
+		"gulp-prettier": "^6.0.0",
+		"gulp-sass": "^6.0.0",
+		"prettier": "^3.4.1",
+		"sass": "^1.81.0"
 	}
 }

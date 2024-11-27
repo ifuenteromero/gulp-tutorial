@@ -1,0 +1,12 @@
+$primary-color: #333;
+
+@mixin center-text {
+	text-align: justify;
+}
+
+header {
+	background-color: $primary-color;
+	color: #fff;
+	padding: 10px;
+	@include center-text;
+}
