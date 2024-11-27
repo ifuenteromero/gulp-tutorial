@@ -4,7 +4,8 @@
 	"description": "gulp tutorial",
 	"type": "module",
 	"scripts": {
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"gulp": "gulp"
 	},
 	"author": "Irene Fuente",
 	"license": "ISC",
