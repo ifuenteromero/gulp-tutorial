@@ -2,7 +2,7 @@
 import gulp from 'gulp';
 
 import { parallel, series } from 'gulp';
-import prettier from 'gulp-prettier';
+// import prettier from 'gulp-prettier';
 import gulpSass from 'gulp-sass';
 import * as dartSass from 'sass';
 
@@ -22,11 +22,13 @@ function printAge(cb) {
 const print = parallel(printName, printAge);
 
 function buildStyles() {
-	return gulp
-		.src('./src/scss/**/*.scss')
-		.pipe(sass().on('error', sass.logError))
-		.pipe(prettier({ tabWidth: 4, useTabs: true }))
-		.pipe(gulp.dest('./public/css'));
+	return (
+		gulp
+			.src('./src/scss/**/*.scss')
+			.pipe(sass({ style: 'compressed' }).on('error', sass.logError))
+			// .pipe(prettier({ tabWidth: 4, useTabs: true }))
+			.pipe(gulp.dest('./public/css'))
+	);
 }
 
 export { buildStyles, print, printAge, printName };
