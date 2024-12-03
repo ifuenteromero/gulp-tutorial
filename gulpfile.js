@@ -1,7 +1,7 @@
 'use strict';
 import gulp from 'gulp';
 
-import { parallel, series } from 'gulp';
+import { parallel, series, watch } from 'gulp';
 // import prettier from 'gulp-prettier';
 import autoprefixer from 'gulp-autoprefixer';
 import gulpSass from 'gulp-sass';
@@ -39,7 +39,12 @@ function buildStyles() {
 	);
 }
 
-export { buildStyles, print, printAge, printName };
+function watchStyles() {
+	// watch(['./src/scss/**/*.scss']).on('add', buildStyles);
+	watch(['./src/scss/**/*.scss'], buildStyles);
+}
+
+export { buildStyles, print, printAge, printName, watchStyles };
 
 // gulp printName
 // gulp --tasks
