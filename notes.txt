@@ -1,2 +1,18 @@
+Cap 1
+- Node js, npm, yarn faster than npm 
+gulp is a task manager library
+
+convert sass into CSS
+compress images
+
+Babel es un transpilador de js que permite a los devs escribir 
+js ES6+ (2015 y posteriores) y convertirlo en una versión compatible con 
+navegadores más antiguos. Babel también puede transformar la sintaxis de JSX    
+y otros lenguajes que se compilan a js
+
+Babel es un transpilador de JavaScript que te permite utilizar las últimas características del lenguaje, incluso si no son compatibles con todos los navegadores o entornos de ejecución. Convierte el código JavaScript moderno en una versión compatible con versiones anteriores para garantizar que funcione en una amplia gama de entornos. Babel también puede transformar la sintaxis de JSX (utilizada en React) y otros lenguajes que se compilan a JavaScript.
+
+Webpack is a bundler
+
 npm i gulp-cli -g
 para ver la versión gulp -v y aparece la de gulp-cli
